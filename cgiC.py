@@ -1,5 +1,3 @@
-
-
 import requests, re, json, cgi
 from bs4 import BeautifulSoup as Soup
  
