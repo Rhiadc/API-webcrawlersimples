@@ -18,4 +18,4 @@ a=Soup(c,"html.parser")
 fs = a.find_all(text =re.compile(palavra))
 data = {'total_string' : len(fs)}
 json_str = json.dumps(data)
-print (json_str)
+return json_str
