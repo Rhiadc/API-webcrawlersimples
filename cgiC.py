@@ -10,7 +10,7 @@ url = fields.getvalue('url')
 totalRequests=requests.get(url)
 totalContent=totalRequests.content
 parsedContent=Soup(c,"html.parser")
-fs = parsedContent.find_all(text =re.compile(palavra))
+fs = parsedContent.find_all(text =re.compile(word))
 data = {'total_string' : len(fs)}
 json_str = json.dumps(data)
 return json_str
